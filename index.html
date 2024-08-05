@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>yd Finance</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bodyStyle">
+    <header class="header" style="margin-top: 0">
+      <h2 style="margin-top: 1%; flex-direction: column">
+        Balance : <span class="totalBalance"> 1000$</span>
+        <p class="day-time" for="">
+          As of Today,<span class="day">05/08/2024 </span>
+        </p>
+      </h2>
+    </header>
+    <img
+      class="ui-image"
+      style="width: 10%; margin-left: 45%"
+      src="logo.png"
+      alt=""
+    />
+    <div class="top-right-container">
+      <input
+        class="top-right-input direct-user-login"
+        type="text"
+        placeholder="User"
+      />
+      <input
+        class="top-right-input user-login-pin"
+        type="text"
+        placeholder="PIN"
+      />
+      <button class="arrow-button">&#8594;</button>
+    </div>
+
+    <div class="home-page">
+      <img class="logo" src="logo.png" alt="" />
+      <section class="inputHomePage">
+        <input placeholder="Full Name" class="inputHomeUser" type="text" />
+        <input class="inputHomePin" type="text" placeholder="PIN" />
+      </section>
+      <form class="currency">
+        <label for="currency">Currency:</label>
+        <select id="currency" name="currency">
+          <option value="inr">Indian Rupee (INR)</option>
+          <option value="usd">American Dollar (USD)</option>
+          <option value="eur">European Euro (EUR)</option>
+        </select>
+      </form>
+      <button class="signUp">Sign Up</button>
+    </div>
+
+    <div class="container">
+      <div class="transactions">
+        <div class="scrollBar"></div>
+        <div class="financialData">
+          <div class="financialDataRow">
+            <label style="text-align: center" for="in">IN</label>
+            <input
+              class="dataBox"
+              id="in"
+              readonly
+              class="dataBox receipt"
+              type="text"
+            />
+          </div>
+          <div class="financialDataRow">
+            <label style="text-align: center" class="" for="out">OUT</label>
+            <input id="out" readonly class="dataBox withdraw" type="text" />
+          </div>
+          <div class="financialDataRow">
+            <label style="text-align: center" class="" for="interest"
+              >INTEREST</label
+            >
+            <input
+              id="interest"
+              readonly
+              class="dataBox interest"
+              type="text"
+            />
+          </div>
+          <button class="logout-button">Logout</button>
+        </div>
+        <section class="idk-buttons">
+          <button class="down-arrow-button">&#9660; SORT</button>
+          <button class="dark-mode-toggle" aria-label="Toggle Dark Mode">
+            DARK
+          </button>
+        </section>
+      </div>
+
+      <div class="actions">
+        <div class="transfer action-box">
+          <label class="action-label firstLabel">Transfer Money</label>
+          <input
+            placeholder="Transfer to :"
+            class="transfer-box input-box transfer-to"
+            type="text"
+          />
+          <input
+            placeholder="Amount"
+            class="transfer-box input-box transfer-amount"
+            type="text"
+          />
+          <button class="transfer-button action-button">&#8594;</button>
+        </div>
+        <div class="request action-box firstLabel">
+          <label class="action-label">Request Loan</label>
+          <input
+            placeholder="Amount"
+            class="loan-amount input-box"
+            type="text"
+          />
+          <button class="loan-button action-button">&#8594;</button>
+        </div>
+        <div class="close action-box">
+          <label class="action-label firstLabel">Close Account</label>
+          <input
+            placeholder="Confirm user"
+            class="confirm-user input-box"
+            type="text"
+          />
+          <input
+            placeholder="Confirm PIN"
+            class="confirm-pin input-box"
+            type="password"
+          />
+          <button class="close-button action-button">&#8594;</button>
+        </div>
+        <label style="text-align: center" for=""
+          >You will be logged out in
+          <label style="font-weight: bolder" class="close-timer"
+            >2.50</label
+          ></label
+        >
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
