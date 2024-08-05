@@ -1,0 +1,494 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: black 2px solid; */
+  font-family: sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+.top-right-container {
+  position: absolute;
+  top: 1.5%;
+  right: 1.5%;
+  display: flex;
+  align-items: center;
+  gap: 7.5px;
+  margin-top: 0.7%;
+}
+
+.top-right-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 80px;
+  text-align: center;
+}
+
+.arrow-button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: auto;
+  cursor: pointer;
+}
+
+.arrow-button:hover {
+  background-color: #0056b3;
+}
+.home-page {
+  margin-top: 25%;
+  background-color: white;
+  width: 70%;
+  margin-left: 15%;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+}
+
+.logo {
+  width: 35%;
+  margin-left: 32.5%;
+  margin-top: 4%;
+}
+.inputHomePage {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inputHomePin {
+  margin-top: 5px;
+  border-radius: 50px;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+.inputHomeUser {
+  border-radius: 50px;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+.currency {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.signUp {
+  background: none;
+  width: 25%;
+  margin-left: 37.5%;
+  margin-top: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  font-size: large;
+  background-color: rgb(6, 214, 145);
+}
+.signUp:hover {
+  background-color: rgb(64, 244, 184);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px;
+  width: 80vw;
+  box-sizing: border-box;
+  margin: 0 auto;
+  height: 80vh;
+  margin-top: 10%;
+}
+
+.transactions,
+.actions {
+  flex: 1;
+  margin: 0 10px;
+
+  /* border: 1px solid #ddd; */
+  background-color: whitesmoke;
+}
+.actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  overflow: hidden;
+}
+.actions > div {
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
+  min-height: 20vh;
+  padding: 10px;
+  margin: 5px 0;
+}
+.transactions {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+.scrollBar {
+  background-color: #e0e0e0;
+  /* border: 1px solid #ccc; */
+  min-height: 45vh;
+  padding: 10px;
+  margin: 5px 0;
+  margin-bottom: 2px;
+}
+.financialData {
+  background-color: whitesmoke;
+  /* border: 1px solid #ccc; */
+  min-height: 20vh;
+  padding: 10px;
+  margin: 5px 0;
+  margin-bottom: 25px;
+}
+.action-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 25px;
+}
+
+.action-label {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-box {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+.action-button {
+  width: 25%;
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  outline: none;
+}
+.action-button:hover {
+  background-color: #f0f0f0;
+  border-color: #999;
+}
+.action-button:active {
+  background-color: #e0e0e0;
+  border-color: #666;
+}
+
+.scrollBar {
+  height: 200px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.scrollBar div {
+  margin-bottom: 8px;
+  padding: 5px;
+  font-size: large;
+}
+.financialData {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background-color: whitesmoke;
+}
+
+.financialDataRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bolder;
+}
+
+.financialDataRow label {
+  min-width: 100px;
+}
+
+.dataBox {
+  width: 100%;
+  padding: 5px;
+}
+
+body {
+  background-color: whitesmoke;
+  min-height: 100vh;
+}
+
+.top-right-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* .home-page {
+  margin: 20px;
+  width: 80%;
+  max-width: 400px;
+} */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 0;
+  padding-bottom: 0;
+}
+
+.transactions,
+.actions {
+  flex: 1;
+  margin: 10px;
+}
+
+.logout-button {
+  background-color: #ff4d4d; /* Red color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: #e60000;
+}
+
+.logout-button:active {
+  background-color: #cc0000;
+}
+.day {
+  color: rgb(108, 107, 107);
+  padding: 10px;
+}
+header {
+  max-width: 90%;
+  margin-left: 5%;
+}
+
+.down-arrow-button {
+  background-color: white;
+  color: #333;
+  border: 2px solid #ccc;
+  border-radius: 10%;
+  width: auto;
+  height: auto;
+  font-size: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  outline: none;
+  padding: 5px;
+}
+
+.down-arrow-button:hover {
+  background-color: #f0f0f0;
+  border-color: #999;
+}
+
+.down-arrow-button:active {
+  background-color: #e0e0e0;
+  border-color: #666;
+}
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode-toggle {
+  background-color: #fff;
+  color: #333;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  outline: none;
+}
+
+/* .dark-mode-toggle:hover {
+  background-color: #f0f0f0;
+  border-color: #999;
+} */
+
+.dark-mode-toggle:active {
+  background-color: #e0e0e0;
+  border-color: #666;
+}
+.idk-buttons {
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+}
+.dark-mode-toggle {
+  font-size: auto;
+  margin-left: 10px;
+  color: black;
+  background-color: white;
+}
+.transfer {
+  background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.request {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.close {
+  background-image: linear-gradient(to top left, #e52a5a, #ff585f);
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.transactions {
+  border-radius: 10px;
+}
+.actions {
+  border-radius: 10px;
+  background-color: white;
+  border: none;
+}
+
+.actions {
+  background-color: whitesmoke;
+}
+.container {
+  background-color: whitesmoke;
+  display: none;
+}
+.header {
+  display: none;
+}
+.ui-image {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+.show {
+  display: flex;
+}
+.desktop-layout {
+  flex-direction: row;
+}
+
+@media (min-width: 768px) {
+  /* Styles for larger screens */
+  .container {
+    flex-direction: row; /* Change back to row for larger screens */
+  }
+  .home-page {
+    margin-top: 13.5%;
+
+    width: 50%;
+    margin-left: 25%;
+  }
+}
+
+.day-time {
+  font-size: large;
+  font-weight: 100;
+}
+.dark-mode {
+  background-color: black;
+}
+
+.dark-mode-text {
+  color: rgb(255, 255, 255);
+}
+/* Default label color */
+.firstLabel {
+  color: black;
+}
+
+/* Dark mode styles */
+.dark-mode .bodyStyle,
+.dark-mode .transactions,
+.dark-mode .actions,
+.dark-mode .container,
+.dark-mode .financialData {
+  /* Dark mode background styles */
+  background-color: black;
+}
+
+/* Dark mode text styles */
+.dark-mode .header,
+.dark-mode .financialDataRow,
+.dark-mode .actions,
+.dark-mode .financialData {
+  /* Dark mode text color styles */
+  color: #fff;
+}
+
+/* Scrollbar transactions styling */
+
+.transaction {
+  padding: 5px;
+  margin: 2px 0;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.loan {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  font-weight: bolder;
+  /* Light green for loans */
+  color: black; /* Dark green text */
+  font-size: large;
+}
+
+.withdrawal {
+  background-image: linear-gradient(
+    to top left,
+
+    #e52a5a,
+    #ff585f
+  ); /* Light red for withdrawals */
+  color: black;
+  font-weight: bolder;
+  font-size: large; /* Dark red text */
+}
+.firstLabel {
+  text-align: center;
+  margin-bottom: 5px;
+}
